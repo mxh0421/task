@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        .td1 {
+            background-color: antiquewhite;
+            width: 10%;
+        }
+
+        .td2 {
+            background-color: peachpuff;
+        }
+    </style>
+
+    <table border="2px">
+        <caption>这是标题</caption>
+        <tr>
+            <td class="td1">1</td>
+            <td class="td1">2</td>
+            <td class="td2">3</td>
+            <td>1</td>
+            <td rowspan="2" colspan="4">2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td class="td1">4</td>
+            <td class="td1">5</td>
+            <td class="td2">6</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td class="td1">4</td>
+            <td class="td1">5</td>
+            <td class="td2">6</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <!-- 是否th标签只能写在 thead 标签中，是否可以写在 tbody 标签中从而让表格横向排列 -->
+    <!-- 答：<th>标签通常用于<thead>中，但不是必须的，<th>标签可以放置在<tbody>或<tfoot>元素中。实现表格的横向排列，可以将每个表头单元格<th>放置在表格的每一行<tr>中，而不仅仅是放在<thead>中。 -->
+</body>
+
+</html>
